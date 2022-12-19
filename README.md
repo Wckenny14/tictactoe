@@ -1,6 +1,5 @@
 # Wayne's TicTacToe
 
-# Heading 1
 
 Plain text just gets imported as part of the paragraph
 
