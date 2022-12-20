@@ -7,7 +7,9 @@
     text-align: center;
 }
 body {
- background-color: lightblue;   
+    /* background-image: url("https://i.imgur.com/D9WO68yh.jpg"); */
+    /* background-size: cover; */
+    background-color: antiquewhite;
 }
 h1 {
     margin: 20px auto;
@@ -35,6 +37,7 @@ h1 {
     margin: 20px auto;
     font-size: 48px;
     font-weight: bold;
+    color: black;
 
 }
 
@@ -52,7 +55,6 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     background-color: #9e79ee;
-    border-radius: 10px;
     margin: 60px auto;
 }
 .board {
@@ -65,28 +67,18 @@ h1 {
 }
 #square-0  {
     grid-area: square-0;
-    /* width: 100px;
-    height: 100px; */
 }
 #square-1 {
     grid-area: square-1;
-    /* width: 100px;
-    height: 100px; */
 }
 #square-2  {
     grid-area: square-2;
-    /* width: 100px;
-    height: 100px; */
 }
 #square-3 {
     grid-area: square-3;
-    /* width: 100px;
-    height: 100px; */
 }
 #square-4  {
     grid-area: square-4;
-    /* width: 100px;
-    height: 100px; */
 }
 #square-5  {
     grid-area: square-5;
@@ -102,7 +94,7 @@ h1 {
 }
 
 .turn {
-    color: #68432b;
+    color: hotpink;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 10px 0;
