@@ -1,4 +1,4 @@
-# My first project: Tic-Tac-Toe
+# My First Project: Tic-Tac-Toe
 
 I recently became a student at General Assembly (GA) in Sydney, Australia studying Software Engineering in a full time immersive course and this is my first student project.
 
@@ -30,9 +30,11 @@ I wrote my initial HTML tree in excel as this was the program I was most familia
 
 This allowed me to see how elements were linked within the tree and where I might require JS.
 
-![Plan_in_excel](/tictactoe/Screenshot%202022-12-18%20at%208.05.08%20pm.png))
+![Plan_in_excel](/tictactoe/Screenshot%202022-12-18%20at%208.05.08%20pm.png)
 
-I also tried to write out my logic in word to help guide me through the process of writing the code but it turned out to be a real mess and completely wrong so I have chosen to omit it from this document.
+Although this was what I originally planned, in the end I chose to go with a different approach and my HTML changed accordingly
+
+I also tried to write out my JS logic initially in word to help guide me through the process of writing the code but it turned out to be a mess and completely wrong so I have chosen to omit it from this document.
 
 ---
 
@@ -90,7 +92,47 @@ Unfortunately this proved to be outside of my capabilities at the time and I end
 
 ---
 
-### Finished product
+### Unfinished Code
 
+Although I managed to complete my game I ended up with some unfinished code.
+
+I was hoping to incorporate score board for each player that would record each time a player won a game.
+
+Unfortunately I ran out of time so to avoid any issues I have not used the following code:
+
+```HTML
+<div class="score">
+<h3 class="scoreOne">00</h3>
+<div class="score">
+<h3 class="scoreTwo">00</h3>
+```
+
+```JavaScript
+let score = 0
+let scoreUpOne = document.querySelector('.scoreOne');
+let scoreUpTwo = document.querySelector('.scoreTwo');
+
+const increase = function () {
+    if (result.innerHTML === 'Player 2 Wins!') {
+            score += 1;
+            scoreUpTwo.textContent = score
+    } else if 
+        (result.innerHTML === 'Player 1 Wins') {
+            score +=1;
+            scoreUpOne.textContent = score
+        } else {
+            score = 0
+        }
+        
+    }
+increase()
+```
+---
+
+
+### Link to Game - Please Enjoy!!
+
+
+---
 
 Copyright Wayne Kenny

@@ -6,14 +6,14 @@
     text-align: center;
 }
 body {
-    background-image: url("https://i.imgur.com/D9WO68yh.jpg");
+    /* background-image: url("https://i.imgur.com/D9WO68yh.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: antiquewhite; */
+    background-size: cover; */
+    background-color: black;
 }
 h1 {
     margin: 20px auto;
-    background: rgba(245, 245, 248, .75);
+    background: white;
     padding: 20px;
     width: 500px;
     height: 85px;
@@ -22,7 +22,7 @@ h1 {
 }
 .intro {
     margin: 20px auto;
-    background: rgba(245, 245, 248, .75);
+    background: white;
     padding: 20px;
     width: 900px;
     text-align: center;
@@ -39,7 +39,7 @@ h1 {
 .player1, .player2 {
     margin: 200px auto;
     padding: 20px;
-    background-color: #9e79ee;
+    background-color: white;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@ h1 {
     /* border: black solid 5px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: #9e79ee;
+    /* background-color: #9e79ee; */
     margin: 10px auto;
 }
 .board {
@@ -77,38 +77,51 @@ h1 {
 .square {
     width: 100px;
     height: 100px;
-    border: black solid 2px;
+    border: white solid 2px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 48px;
+    color: white;
 }
 #square-0  {
     grid-area: square-0;
+    border-top: 0;
+    border-left: 0;
 }
 #square-1 {
     grid-area: square-1;
+    border-top: 0;
 }
 #square-2  {
     grid-area: square-2;
+    border-top: 0;
+    border-right: 0;
 }
 #square-3 {
     grid-area: square-3;
+    border-left: 0;
 }
 #square-4  {
     grid-area: square-4;
 }
 #square-5  {
     grid-area: square-5;
+    border-right: 0;
 }
 #square-6  {
     grid-area: square-6;
+    border-left: 0;
+    border-bottom: 0;
 }
 #square-7  {
     grid-area: square-7;
+    border-bottom: 0;
 }
 #square-8  {
     grid-area: square-8;
+    border-bottom: 0;
+    border-right: 0;
 }
 
 .turn {
@@ -119,8 +132,8 @@ h1 {
   }
 
   .reset {
-    background-color: lightblue;
-    color: #210eee;
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -128,6 +141,7 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     margin: 10px 0;
+
   }
 
   .result {

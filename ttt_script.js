@@ -105,7 +105,24 @@ function resetGame() {
 // start game
 startGame()
 
+let score = 0
+let scoreUpOne = document.querySelector('.scoreOne');
+let scoreUpTwo = document.querySelector('.scoreTwo');
 
+const increase = function () {
+    if (result.innerHTML === 'Player 2 Wins!') {
+            score += 1;
+            scoreUpTwo.textContent = score
+    } else if 
+        (result.innerHTML === 'Player 1 Wins') {
+            score +=1;
+            scoreUpOne.textContent = score
+        } else {
+            score = 0
+        }
+        
+    }
+increase()
 
 
 
