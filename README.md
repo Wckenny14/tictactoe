@@ -30,7 +30,7 @@ I wrote my initial HTML tree in excel as this was the program I was most familia
 
 This allowed me to see how elements were linked within the tree and where I might require JS.
 
-![Plan_in_excel](/tictactoe/Screenshot%202022-12-18%20at%208.05.08%20pm.png)
+![Plan_in_excel](Screenshot%202022-12-18%20at%208.05.08%20pm.png "picture")
 
 Although this was what I originally planned, in the end I chose to go with a different approach and my HTML changed accordingly
 
