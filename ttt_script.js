@@ -1,5 +1,3 @@
-/////////////////// Variables and fixed components of the game
-
 // Access board elements in the DOM
 const playerTurn = document.querySelector(".turn")
 const result = document.querySelector(".result")
