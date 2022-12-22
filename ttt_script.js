@@ -51,6 +51,7 @@ const startGame = function() {
             count++;
             console.log(count)
             checkWinner();
+            // increase()
         }
         //Create the turn function that places the player marker in a particular square
         function turn(squareId, player) {
@@ -72,6 +73,8 @@ function checkWinner() {
         (boardSquares[2].innerText === playerOne && boardSquares[4].innerText === playerOne && boardSquares[6].innerText === playerOne)) {
             result.innerHTML = 'Player 1 Wins!';
             result.style.display = 'flex'
+            scoreOne++;
+            scoreUpOne.textContent = scoreOne
     } else if ((boardSquares[0].innerText === playerTwo && boardSquares[1].innerText === playerTwo && boardSquares[2].innerText === playerTwo) || 
         (boardSquares[3].innerText === playerTwo && boardSquares[4].innerText === playerTwo && boardSquares[5].innerText === playerTwo) || 
         (boardSquares[6].innerText === playerTwo && boardSquares[7].innerText === playerTwo && boardSquares[8].innerText === playerTwo) || 
@@ -82,6 +85,8 @@ function checkWinner() {
         (boardSquares[2].innerText === playerTwo && boardSquares[4].innerText === playerTwo && boardSquares[6].innerText === playerTwo)) {
             result.innerHTML = 'Player 2 Wins!';
             result.style.display = 'flex'
+            scoreTwo++;
+            scoreUpTwo.textContent = scoreTwo
     } else
         // check for a tie - all squares filled and no winner
         // console.log('if tie', count)
@@ -105,24 +110,25 @@ function resetGame() {
 // start game
 startGame()
 
-let score = 0
+let scoreOne = 0
+let scoreTwo = 0
 let scoreUpOne = document.querySelector('.scoreOne');
 let scoreUpTwo = document.querySelector('.scoreTwo');
 
-const increase = function () {
-    if (result.innerHTML === 'Player 2 Wins!') {
-            score += 1;
-            scoreUpTwo.textContent = score
-    } else if 
-        (result.innerHTML === 'Player 1 Wins') {
-            score +=1;
-            scoreUpOne.textContent = score
-        } else {
-            score = 0
-        }
+// const increase = function () {
+//     if (result.innerHTML === 'Player 2 Wins!') {
+//             score += 1;
+//             scoreUpTwo.textContent = score
+//     } else if 
+//         (result.innerHTML === 'Player 1 Wins!') {
+//             score +=1;
+//             scoreUpOne.textContent = score
+        // } else {
+        //     score = 0
+        // }
         
-    }
-increase()
+//     }
+// }
 
 
 

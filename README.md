@@ -92,45 +92,8 @@ Unfortunately this proved to be outside of my capabilities at the time and I end
 
 ---
 
-### Unfinished Code
 
-Although I managed to complete my game I ended up with some unfinished code.
-
-I was hoping to incorporate score board for each player that would record each time a player won a game.
-
-Unfortunately I ran out of time so to avoid any issues I have not used the following code:
-
-```HTML
-<div class="score">
-<h3 class="scoreOne">00</h3>
-<div class="score">
-<h3 class="scoreTwo">00</h3>
-```
-
-```JavaScript
-let score = 0
-let scoreUpOne = document.querySelector('.scoreOne');
-let scoreUpTwo = document.querySelector('.scoreTwo');
-
-const increase = function () {
-    if (result.innerHTML === 'Player 2 Wins!') {
-            score += 1;
-            scoreUpTwo.textContent = score
-    } else if 
-        (result.innerHTML === 'Player 1 Wins') {
-            score +=1;
-            scoreUpOne.textContent = score
-        } else {
-            score = 0
-        }
-        
-    }
-increase()
-```
----
-
-
-### Link to Game - Please Enjoy!!
+# Please enjoy my game!!
 
 
 ---
