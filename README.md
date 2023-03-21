@@ -1,6 +1,6 @@
 # My First Project: Tic-Tac-Toe
 
-I recently became a student at General Assembly (GA) in Sydney, Australia studying Software Engineering in a full time immersive course and this is my first student project.
+This is my first project as a student at General Assembly (GA) in Sydney Australia, studying Software Engineering in a full time immersive course.
 
 ---
 
